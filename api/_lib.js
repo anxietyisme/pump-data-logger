@@ -19,11 +19,11 @@ const AGENCIES = {
     pass: 'sas123',
     spreadsheetId: '13Wx72GjXua4kFGJMEt6je_3aUH7fIkYiukYKiBWyW3c',
     sheets: {
-      'CHARIAL':       { name: 'Charial-I',     start: 13, end: 118 },
+      'CHARIAL-I':     { name: 'Charial-I',     start: 13, end: 118 },
       'MUKUNDAPUR':    { name: 'Mukundapur',    start: 13, end: 118 },
       'KALAGACHIA-I':  { name: 'Kalagachia-I',  start: 13, end: 118 },
       'KALAGACHIA-II': { name: 'Kalagachia-II', start: 13, end: 118 },
-      'BEGORE-1':      { name: 'Begore-I',      start: 13, end: 118 },
+      'BEGORE-I':      { name: 'Begore-I',      start: 13, end: 118 },
       'BEGORE-II':     { name: 'Begore-II',     start: 13, end: 118 },
     }
   },
@@ -31,17 +31,17 @@ const AGENCIES = {
     pass: 'tecnico123',
     spreadsheetId: '1YvDRyxEIMqGbyqfbgobdOkNN1aBYRgjh9FLQkagowIs', 
     sheets: {
-      'SANTOSHPUR':   { name: 'Santoshpur',   start: 13, end: 118 },
-      'GARFA':        { name: 'Garfa',        start: 13, end: 118 },
-      'PUJALI-I':     { name: 'Pujali-I',     start: 13, end: 118 },
-      'KHEYADAKHAL':  { name: 'Kheyadakhal',  start: 13, end: 118 },
+      'SANTOSHPUR':       { name: 'Santoshpur',   start: 13, end: 118 },
+      'GARFA':            { name: 'Garfa',        start: 13, end: 118 },
+      'PUJALI':           { name: 'Pujali',       start: 13, end: 118 },
+      'KHEYADA KHAL2026': { name: 'Kheyada Khal', start: 13, end: 118 },
     }
   },
   'geebee': {
     pass: 'geebee123',
     spreadsheetId: '1FISPmDehaA0DH1QTx44H1Y7d5pNb4EnXy4pbKos-UrI',
     sheets: {
-      'LAKETOWN':     { name: 'Laketown',     start: 13, end: 118 },
+      'Sheet1': { name: 'Laketown', start: 13, end: 118 },
     }
   }
 };
