@@ -79,10 +79,8 @@ module.exports = async (req, res) => {
       return allData;
     }
 
-    const [kolkataData, howrahData] = await Promise.all([
-      fetchAgencyData(kolkataAgencies),
-      fetchAgencyData(howrahAgencies)
-    ]);
+    const kolkataData = await fetchAgencyData(kolkataAgencies);
+    const howrahData = await fetchAgencyData(howrahAgencies);
 
     function aggregateByDate(data) {
       const map = new Map();
