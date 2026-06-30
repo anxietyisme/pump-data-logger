@@ -48,8 +48,8 @@ module.exports = async (req, res) => {
   try {
     const sheetsAPI = google.sheets({ version: 'v4', auth: getAuth() });
     
-    const kolkataAgencies = ['sas', 'geebee'];
-    const howrahAgencies = ['tecnico', 'gdenterprise'];
+    const kolkataAgencies = ['sas', 'geebee', 'tecnico'];
+    const howrahAgencies = ['gdenterprise'];
     const allAgencies = ['sas', 'geebee', 'tecnico', 'gdenterprise'];
 
     function calcTotalInstalled(agencyKeys) {
