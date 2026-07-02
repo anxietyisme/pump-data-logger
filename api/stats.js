@@ -32,10 +32,7 @@ const GD_ENTERPRISE_COLS = {
 };
 
 function getPumpCount(agencyKey, sheetConfig) {
-  if (agencyKey === 'gdenterprise') {
-    return sheetConfig.pumps || 9;
-  }
-  return 5;
+  return sheetConfig.pumps || 5;
 }
 
 function getRangeEndCol(pumpCount) {
@@ -56,8 +53,8 @@ module.exports = async (req, res) => {
     const sheetsAPI = google.sheets({ version: 'v4', auth: getAuth() });
     
     const kolkataAgencies = ['sas', 'geebee', 'tecnico'];
-    const howrahAgencies = ['gdenterprise'];
-    const allAgencies = ['sas', 'geebee', 'tecnico', 'gdenterprise'];
+    const howrahAgencies = ['gdenterprise', 'bally'];
+    const allAgencies = ['sas', 'geebee', 'tecnico', 'gdenterprise', 'bally'];
 
     function calcTotalInstalled(agencyKeys) {
       let total = 0;

@@ -18,8 +18,7 @@ function calculateHours(startStr, stopStr) {
 }
 
 function getPumpCount(agencyKey, sheetConfig) {
-  if (agencyKey === 'gdenterprise') return sheetConfig.pumps || 9;
-  return 5;
+  return sheetConfig.pumps || 5;
 }
 
 function getRangeEndCol(pumpCount) {
@@ -42,7 +41,7 @@ const ROWS_CONFIG = [
   {
     sl: 3, loc: 'Charial-II 5 vent sluice, Ward No-3&4, Budge Budge Municipality, Dist: 24 PGS (South)', subLoc: '',
     dist: 'Dist: 24 PGS (South)', type: 'Motor driven pump, 10 HP', pumps: 7, uom: 'Nos.',
-    mapping: null
+    mapping: { agency: 'sas', sheetKey: 'CHARIAL-II' }
   },
   {
     sl: 4, loc: 'Pujali-I 10 vent, Ward No-2&3, Pujali Municipality, Dist: 24 PGS (South)', subLoc: '',
@@ -52,7 +51,7 @@ const ROWS_CONFIG = [
   {
     sl: 5, loc: 'Pujali-II 10 vent, Ward No-2&3, Pujali Municipality, Dist: 24 PGS (South)', subLoc: '',
     dist: 'Dist: 24 PGS (South)', type: 'Motor driven pump, 10 HP', pumps: 7, uom: 'Nos.',
-    mapping: null
+    mapping: { agency: 'tecnico', sheetKey: 'PUJALI-II' }
   },
   {
     sl: 6, loc: 'Santoshpur Jora Bridge near Kishore Bharati Stadium , Santosh pur, Kolkta Municipal Corporation, Dist 24 PGS (South)', subLoc: '',
@@ -112,27 +111,27 @@ const ROWS_CONFIG = [
   {
     sl: 17, loc: 'Bally jagacha, G.P- Anandnagar-Chakpara', subLoc: 'Dashinjaypur Under Pass-4 nos\nJaipur School - 4 nos\nDakshin Jaipur-5 nos\nAnandnagar Kayalpara-4 nos\nNaskarpara-4 nos\nAnandnagar Fisheries- 5 nos',
     dist: 'Howrah', type: 'Motor Driven Pump. 10/12.5/20 HP', pumps: 26, uom: 'Nos.',
-    mapping: null
+    mapping: { agency: 'bally', sheetKey: 'Anandnagar' }
   },
   {
     sl: 18, loc: 'Bally jagacha, G.P- Durgapur - Avoynagar', subLoc: 'Uttarjaipur bill- 5nos\nPandar chak field-4 nos\nBelanagar pender chak-4 nos\nHatipara-4 nos\nBelanagar Bhuipara-4 nos',
     dist: 'Howrah', type: 'Motor Driven Pump. 10/12.5HP', pumps: 21, uom: 'Nos.',
-    mapping: null
+    mapping: { agency: 'bally', sheetKey: 'Durgapur' }
   },
   {
     sl: 19, loc: 'Bally jagacha, G.P- Bally, Shantinagar Kumilla & Chamrail', subLoc: 'Belur Railway stan-4nos\nShantinagar/Ishanpally- 2 nos\nKona more--2 nos',
     dist: 'Howrah', type: 'Motor Driven Pump. 10/12.5HP', pumps: 8, uom: 'Nos.',
-    mapping: null
+    mapping: { agency: 'bally', sheetKey: 'Bally' }
   },
   {
     sl: 20, loc: 'Bally jagacha, G.P- Nischinda', subLoc: 'Nischinda water tank- 4nos\nSilpashree- 4 nos\nPalpukur--2 nos\nNischinda Paschimpara- 3 nos\nNischinda Dighipar-4 nos\nNischinda medlinic-3 nos',
     dist: 'Howrah', type: 'Motor Driven Pump. 10/12.5HP', pumps: 20, uom: 'Nos.',
-    mapping: null
+    mapping: { agency: 'bally', sheetKey: 'Nischinda' }
   },
   {
     sl: 21, loc: 'Bally jagacha, G.P- Sapuipara-Basukathi', subLoc: 'ESI Hospital- 4nos\nArbindanagar- 3 nos\nKristhanpara--2 nos\nsantinagr more- 2 nos\nAnandanagar B.ED College-4 nos\nBanstala-4 nos\nBhattanagar, Bagerjola, Dipus shop and Nayanjuli- 5 nos',
     dist: 'Howrah', type: 'Motor Driven Pump. 10/12.5HP', pumps: 24, uom: 'Nos.',
-    mapping: null
+    mapping: { agency: 'bally', sheetKey: 'Sapuipara' }
   }
 ];
 
